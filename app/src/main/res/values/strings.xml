@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fishing for Compliments</string>
+
+
+    <!--About Page Strings  -->
+    <string name="about_1">Fishing for Compliments</string>
+    <string name="about_2">Q4573R</string>
+    <string name="about_3">q4573r@gmail.com</string>
+    <!-- activity main -->
+    <string name="buttonSTR">Fish for compliment!</string>
+
+</resources>
