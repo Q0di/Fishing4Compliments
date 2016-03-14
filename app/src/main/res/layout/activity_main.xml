@@ -7,13 +7,16 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.q4573r.fishing4compliments.MainActivity">
+    tools:context="com.example.q4573r.fishing4compliments.MainActivity"
+    android:background="@color/black"
+    >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="New Text"
-        android:id="@+id/quoteTV"
+        android:textColor="@color/blue"
+        android:id="@+id/complimentTV"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="39dp" />
@@ -22,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/buttonSTR"
-        android:id="@+id/getQuoteBTN"
+        android:id="@+id/getComplimentBTN"
         android:onClick="showCompliment"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />

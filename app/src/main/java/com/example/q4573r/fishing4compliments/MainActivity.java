@@ -16,8 +16,8 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 
-    private Button getQuoteBTN;
-    private TextView quoteTV;
+    private Button getComplimentBTN;
+    private TextView complimentTV;
     ComplimentsDatabase complimentsDatabase;
 
 
@@ -26,8 +26,8 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(com.example.q4573r.fishing4compliments.R.layout.activity_main);
 
-        getQuoteBTN = (Button) findViewById(R.id.getQuoteBTN);
-        quoteTV = (TextView) findViewById(R.id.quoteTV);
+        getComplimentBTN = (Button) findViewById(R.id.getComplimentBTN);
+        complimentTV = (TextView) findViewById(R.id.complimentTV);
 
         complimentsDatabase = new ComplimentsDatabase(this,null,null,1);
 
@@ -57,10 +57,10 @@ public class MainActivity extends ActionBarActivity {
             Intent intent = new Intent();
             PendingIntent pIntent = PendingIntent.getActivity(this, 0, intent, 0);
             Notification noti = new Notification.Builder(this)
-                    .setTicker("Quotes")
-                    .setContentTitle("Quotes")
-                    .setContentText("Enjoy.")
-                    .setSmallIcon(com.example.q4573r.fishing4compliments.R.drawable.ic_launcher)
+                    .setTicker("Fishing 4 Compliments")
+                    .setContentTitle("Fishing 4 Compliments")
+                    .setContentText("You're brighter than the sun.")
+                    .setSmallIcon(com.example.q4573r.fishing4compliments.R.drawable.sun)
                     .setContentIntent(pIntent).getNotification();
             noti.flags=Notification.FLAG_AUTO_CANCEL;
             NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
@@ -77,7 +77,7 @@ public class MainActivity extends ActionBarActivity {
 
 
     public void showCompliment(View view){
-        quoteTV.setText(complimentsDatabase.grabRandomCompliment());
+        complimentTV.setText(complimentsDatabase.grabRandomCompliment());
 
     }
 

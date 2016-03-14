@@ -5,7 +5,7 @@
         android:title="About"
         />
     <item
-        android:id="@+id/quoteOption"
-        android:title="Quote"
+        android:id="@+id/addComplimentOption"
+        android:title="Add a Compliment"
         />
 </menu>

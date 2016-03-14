@@ -4,11 +4,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.q4573r.fishing4compliments.AddComplimentActivity">
+    tools:context="com.example.q4573r.fishing4compliments.AddComplimentActivity"
+    android:background="@color/black"
+    >
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/blue"
         android:id="@+id/addComplimentET"
         android:hint="Enter A Compliment Here"
         android:layout_gravity="center_horizontal" />
