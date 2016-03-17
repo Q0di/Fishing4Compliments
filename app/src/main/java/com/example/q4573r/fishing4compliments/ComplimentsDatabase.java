@@ -28,9 +28,10 @@ public class ComplimentsDatabase extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-    //query string
+    //magic words for making the table
         String query = "CREATE TABLE " + TABLE_COMPLIMENTS + "(" + COLUMN_ID +
                 " INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_COMPLIMENT + " TEXT " + ");";
+    //*Poof* Table is now created
         db.execSQL(query);
     }
 
@@ -91,19 +92,22 @@ public class ComplimentsDatabase extends SQLiteOpenHelper {
 
     public String grabRandomCompliment(){
         SQLiteDatabase db = getReadableDatabase();
-       /* String query = "SELECT * FROM " + TABLE_COMPLIMENTS + " ORDER BY RANDOM() LIMIT 1";
+       /*
+       // returns all compliments
+       String query = "SELECT * FROM " + TABLE_COMPLIMENTS + " ORDER BY RANDOM() LIMIT 1";
         Cursor c = db.rawQuery(query,null);
         db.close();*/
 
+        //query that selects random string from DB
         Cursor c = db.query(TABLE_COMPLIMENTS + " ORDER BY RANDOM() LIMIT 1",
                 new String[] { COLUMN_COMPLIMENT },null,null,null,null,null);
 
+        //returns query
         if(c.moveToFirst())
             return c.getString(c.getColumnIndex(COLUMN_COMPLIMENT));
         else
+        //if database is empty show this instead
             return "You are beautiful";
 
     }
-
-
 }

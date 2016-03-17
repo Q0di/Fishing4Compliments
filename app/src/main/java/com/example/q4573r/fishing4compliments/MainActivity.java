@@ -31,6 +31,30 @@ public class MainActivity extends ActionBarActivity {
 
         complimentsDatabase = new ComplimentsDatabase(this,null,null,1);
 
+        //fill table with lovely sentiments
+        complimentsDatabase.addCompliment(new Compliment("Your smile is contagious"));
+        complimentsDatabase.addCompliment(new Compliment("You look great today"));
+        complimentsDatabase.addCompliment(new Compliment("You should be proud of yourself."));
+        complimentsDatabase.addCompliment(new Compliment("You're more helpful than you realize"));
+        complimentsDatabase.addCompliment(new Compliment("Your eyes are breath taking"));
+        complimentsDatabase.addCompliment(new Compliment("If cartoon bluebirds were real, a bunch of them would be sitting on your shoulders singing right now"));
+        complimentsDatabase.addCompliment(new Compliment("How is it that you always look great, even in sweatpants?"));
+        complimentsDatabase.addCompliment(new Compliment("Hanging out with you is always a blast"));
+        complimentsDatabase.addCompliment(new Compliment("You smell really good"));
+        complimentsDatabase.addCompliment(new Compliment("Being around you makes everything better"));
+        complimentsDatabase.addCompliment(new Compliment("That thing you don't like about yourself is what makes you so interesting."));
+        complimentsDatabase.addCompliment(new Compliment("You're wonderful."));
+        complimentsDatabase.addCompliment(new Compliment("You're better than a triple-scoop ice cream cone. With sprinkles."));
+        complimentsDatabase.addCompliment(new Compliment("Your hair looks stunning"));
+        complimentsDatabase.addCompliment(new Compliment("You're inspiring"));
+        complimentsDatabase.addCompliment(new Compliment("You're one of a kind!"));
+        complimentsDatabase.addCompliment(new Compliment("If you were a box of crayons, you'd be the giant name-brand one with the built-in sharpener"));
+        complimentsDatabase.addCompliment(new Compliment("Our community is better because you're in it"));
+        complimentsDatabase.addCompliment(new Compliment("You have the best ideas"));
+        complimentsDatabase.addCompliment(new Compliment("You always know how to find that silver lining"));
+        complimentsDatabase.addCompliment(new Compliment("You're always learning new things and trying to better yourself, which is awesome."));
+
+
 
     }
 
@@ -80,5 +104,8 @@ public class MainActivity extends ActionBarActivity {
         complimentTV.setText(complimentsDatabase.grabRandomCompliment());
 
     }
+
+
+
 
 }

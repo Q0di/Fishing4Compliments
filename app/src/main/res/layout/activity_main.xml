@@ -14,7 +14,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Text"
+        android:text="I just want to tell you that..."
         android:textColor="@color/blue"
         android:id="@+id/complimentTV"
         android:layout_alignParentTop="true"
@@ -22,12 +22,18 @@
         android:layout_marginTop="39dp" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/buttonSTR"
         android:id="@+id/getComplimentBTN"
         android:onClick="showCompliment"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="@color/light_blue"
+        android:shadowDx="3"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        />
 
 </RelativeLayout>
