@@ -29,11 +29,6 @@
         android:onClick="showCompliment"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/buttonshape"
-        android:shadowColor="@color/light_blue"
-        android:shadowDx="3"
-        android:shadowDy="0"
-        android:shadowRadius="8"
         />
 
 </RelativeLayout>
